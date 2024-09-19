@@ -18,7 +18,7 @@ wget https://storage.googleapis.com/personalized-soups/data.zip
 ### Step 1 - Generate Rollouts
 
 ```
-torchrun --nnodes 1 --nproc_per_node 1 /net/nfs.cirrascale/mosaic/joel/personalized-rlhf/generate_rollouts.py \
+torchrun --nnodes 1 --nproc_per_node 1 /personalized-rlhf/generate_rollouts.py \
     --output_dir $OUTPUT_DIR \
     --base_model $PATH_TO_TULU_CKPT \
     --dataset_name 'data/alpaca_gpt4_10k.json' \
